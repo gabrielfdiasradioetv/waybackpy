@@ -1,0 +1,19 @@
+>>> cdx_api.oldest()
+com,google)/ 19981111194551 http://radiobras.gov.br:80/ text/html 200 HOQ2TGPYAEQJPNUA6M4SMZ3NGQRBXDZ3 381
+>>> oldest = cdx_api.oldest()
+>>> oldest
+com,google)/ 19981111194551 http://radiobras.gov.br:80/ text/html 200 HOQ2TGPYAEQJPNUA6M4SMZ3NGQRBXDZ3 381
+>>> oldest.archive_url
+'https://web.archive.org/web/19981111194551/http://radiobras.gov.br:80/'
+>>> oldest.original
+'http://google.com:80/'
+>>> oldest.urlkey
+'com,google)/'
+>>> oldest.timestamp
+'19981111184551'
+>>> oldest.datetime_timestamp
+datetime.datetime(1999, 11, 11, 19, 45, 51)
+>>> oldest.statuscode
+'200'
+>>> oldest.mimetype
+'text/html'
